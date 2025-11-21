@@ -57,7 +57,7 @@ export default function Home() {
             const mesh = new THREE.Mesh(geometry, new THREE.MeshLambertMaterial({ color: 0x8b4513 }));
             mesh.position.set(x * CHUNK_SIZE, 0, z * CHUNK_SIZE);
             scene.add(mesh);
-            chunks[`${x},${z}`] = mesh;
+            chunks[\\`${x},${z}\\`] = mesh;
           }
 
           // Load initial chunks around player
