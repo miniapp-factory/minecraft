@@ -9,11 +9,7 @@ export default function Home() {
       <span className="text-2xl">{title}</span>
       <span className="text-muted-foreground">{description}</span>
       <div id="game" className="w-full h-full"></div>
-      <script src="https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/three@0.169.0/examples/js/controls/PointerLockControls.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/simplex-noise@4.0.1/simplex-noise.js"></script>
-      <script>
-        // Game logic here
+      <script dangerouslySetInnerHTML={{ __html: `// Game logic here
         (function() {
           const container = document.getElementById('game');
           const scene = new THREE.Scene();
@@ -173,8 +169,7 @@ export default function Home() {
             player.mesh.position.set(pos.x, pos.y, pos.z);
             camera.position.set(pos.x, pos.y + 0.6, pos.z);
           }
-        })();
-      </script>
+        })();` }} />
     </main>
   );
 }
