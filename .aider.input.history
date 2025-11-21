@@ -14,3 +14,41 @@
 +```
 +
 +Generate an app logo and update the app metadata title and description.
+
+# 2025-11-21 15:32:27.430872
++Create a full-screen mobile-friendly 3D Minecraft clone using only a single Next.js page with vanilla Three.js from CDN (no npm installs).
++
++Requirements:
++- Use https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.min.js and https://cdn.jsdelivr.net/npm/three@0.169.0/examples/js/controls/PointerLockControls.js via <script> tags in app/layout.tsx or page.tsx
++- Infinite procedural terrain using SimplexNoise (also from CDN: https://cdn.jsdelivr.net/npm/simplex-noise@4.0.1/simplex-noise.js)
++- Chunk system (16x16x64), greedy meshing or at least face culling
++- First-person controls:
++  - Mobile: left half screen = virtual joystick for movement, right half = drag to look
++  - Desktop: WASD + mouse (PointerLockControls fallback)
++- Tap/click to break block, right-click or long-tap to place block (grass block for now)
++- Player physics: gravity, jumping, collision with blocks
++- Day lighting + fog
++- Black terminal style UI overlay with crosshair
++- Store player position in localStorage
++- No external dependencies beyond the three CDN scripts
++- Fix any syntax errors and make sure it builds and runs perfectly in MiniApp Factory
++- Make it look and feel like real Minecraft, 60 FPS on iPhone/Android
+
+# 2025-11-21 15:32:27.431825
++Create a full-screen mobile-friendly 3D Minecraft clone using only a single Next.js page with vanilla Three.js from CDN (no npm installs).
++
++Requirements:
++- Use https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.min.js and https://cdn.jsdelivr.net/npm/three@0.169.0/examples/js/controls/PointerLockControls.js via <script> tags in app/layout.tsx or page.tsx
++- Infinite procedural terrain using SimplexNoise (also from CDN: https://cdn.jsdelivr.net/npm/simplex-noise@4.0.1/simplex-noise.js)
++- Chunk system (16x16x64), greedy meshing or at least face culling
++- First-person controls:
++  - Mobile: left half screen = virtual joystick for movement, right half = drag to look
++  - Desktop: WASD + mouse (PointerLockControls fallback)
++- Tap/click to break block, right-click or long-tap to place block (grass block for now)
++- Player physics: gravity, jumping, collision with blocks
++- Day lighting + fog
++- Black terminal style UI overlay with crosshair
++- Store player position in localStorage
++- No external dependencies beyond the three CDN scripts
++- Fix any syntax errors and make sure it builds and runs perfectly in MiniApp Factory
++- Make it look and feel like real Minecraft, 60 FPS on iPhone/Android
